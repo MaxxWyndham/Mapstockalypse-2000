@@ -169,6 +169,7 @@ namespace Mapstockalypse_2000
             RaceDetails newRace = mods[lstMods.SelectedIndex];
 
             string oldRaceName = Path.GetFileNameWithoutExtension(oldRace.RaceFilename);
+            string newRaceName = Path.GetFileNameWithoutExtension(newRace.RaceFilename);
 
             // extract archive (if installing from one)
             if (modZips.ContainsKey(lstMods.SelectedIndex))
@@ -192,17 +193,17 @@ namespace Mapstockalypse_2000
             }
 
             // validate installation by checking MapFilename exists
-            if (Directory.Exists(Path.Combine(txtPath.Text, "data", "races", oldRaceName)))
+            if (Directory.Exists(Path.Combine(txtPath.Text, "data", "races", newRaceName)))
             {
-                success = File.Exists(Path.Combine(txtPath.Text, "data", "races", oldRaceName, $"{oldRaceName}.txt"));
+                success = File.Exists(Path.Combine(txtPath.Text, "data", "races", newRaceName, $"{newRaceName}.txt"));
             }
             else
             {
-                if (File.Exists(Path.Combine(txtPath.Text, "data", "races", $"{oldRaceName}.twt")))
+                if (File.Exists(Path.Combine(txtPath.Text, "data", "races", $"{newRaceName}.twt")))
                 {
-                    TWT twt = TWT.Load(Path.Combine(txtPath.Text, "data", "races", $"{oldRaceName}.twt"));
+                    TWT twt = TWT.Load(Path.Combine(txtPath.Text, "data", "races", $"{newRaceName}.twt"));
 
-                    success = twt.Contents.Any(entry => string.Compare(entry.Name, $"{oldRaceName}.txt", true) == 0);
+                    success = twt.Contents.Any(entry => string.Compare(entry.Name, $"{newRaceName}.txt", true) == 0);
                 }
             }
 
