@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mapstockalypse 2000", "Mapstockalypse 2000\Mapstockalypse 2000.csproj", "{0200DF75-F7CB-4A94-B3E8-DBF13E655BEC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0200DF75-F7CB-4A94-B3E8-DBF13E655BEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0200DF75-F7CB-4A94-B3E8-DBF13E655BEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0200DF75-F7CB-4A94-B3E8-DBF13E655BEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0200DF75-F7CB-4A94-B3E8-DBF13E655BEC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8D05DC03-6B80-437F-AA1E-A87C07AD781E}
+	EndGlobalSection
+EndGlobal
